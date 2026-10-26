@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PelangganController;
+
+Route::resource('Pelanggan', PelangganController::class);
 
 Route::get('/', function () {
     return view('welcome');
