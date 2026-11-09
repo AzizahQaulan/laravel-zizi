@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\PortfolioController;
+
+Route::resource('portofolio', PortfolioController::class);
 
 Route::resource('Pelanggan', PelangganController::class);
 
